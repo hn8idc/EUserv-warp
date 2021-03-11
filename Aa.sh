@@ -1,16 +1,7 @@
 #!/bin/bash
 
 apt update && apt install curl sudo lsb-release iptables -y
-
-if [ -f "/etc/apt/sources.list.d/backports.list" ]; then
-	apt update
-	else
-	echo "deb http://deb.debian.org/debian $(lsb_release -sc)-backports main" | sudo tee /etc/apt/sources.list.d/backports.list
-	apt update
-fi
-
-DEBIAN_FRONTEND=noninteractive apt install net-tools iproute2 openresolv dnsutils -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold"
-DEBIAN_FRONTEND=noninteractive apt install wireguard-tools --no-install-recommends -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold"
+add-apt-repository ppa:wireguard/wireguard
 curl -fsSL git.io/wireguard-go.sh | sudo bash
 curl -fsSL git.io/wgcf.sh | sudo bash
 echo | wgcf register
