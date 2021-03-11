@@ -1,14 +1,6 @@
 #!/bin/bash
 
-main=`uname  -r | awk -F . '{print $1 }'`
-minor=`uname -r | awk -F . '{print $2}'`
-
 apt update && apt install curl sudo lsb-release iptables -y
-
-if [ -f "/etc/wireguard/wgcf.conf" ]; then
-	echo "当前已经安装了wgcf"
-	exit 1
-fi
 
 if [ -f "/etc/apt/sources.list.d/backports.list" ]; then
 	apt update
