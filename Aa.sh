@@ -1,7 +1,12 @@
 #!/bin/bash
 
 apt update && apt install curl sudo lsb-release iptables -y
-add-apt-repository ppa:wireguard/wireguard
+if [ -f "/etc/apt/sources.list.d/backports.list" ]; then
+	apt update
+	else
+	echo "deb http://deb.debian.org/debian $(lsb_release -sc)-backports main" | sudo tee /etc/apt/sources.list.d/backports.list
+	apt update
+fi
 curl -fsSL git.io/wireguard-go.sh | sudo bash
 curl -fsSL git.io/wgcf.sh | sudo bash
 echo | wgcf register
