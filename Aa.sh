@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo -e "nameserver 2a09:11c0:f1:bbf0::70\nnameserver 2a01:4f8:c2c:123f::1" > /etc/resolv.conf
 apt update && apt install curl sudo lsb-release iptables -y
 if [ -f "/etc/apt/sources.list.d/backports.list" ]; then
 	apt update
