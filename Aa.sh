@@ -12,7 +12,7 @@ curl -fsSL git.io/wgcf.sh | sudo bash
 echo | wgcf register
 wgcf generate
 sed -i 's/engage.cloudflareclient.com/2606:4700:d0::a29f:c001/g' wgcf-profile.conf
-sed -i 's/2620:fe::10,2001:4860:4860::8888,2606:4700:4700::1111/g' wgcf-profile.conf
+sed -i 's/1.1.1.1/2620:fe::10,2001:4860:4860::8888,2606:4700:4700::1111/g' wgcf-profile.conf
 sed -i '/\:\:\/0/d' wgcf-profile.conf
 cp wgcf-profile.conf /etc/wireguard/wgcf.conf
 systemctl enable wg-quick@wgcf
