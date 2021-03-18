@@ -1,6 +1,6 @@
 # lxcovz+v4-warp
 
-# 脚本仅针对OpenVZ、LXC架构纯IPV6添加IPV4网络支持
+# 脚本仅针对OpenVZ、LXC架构纯IPV6添加Warp IPV4网络支持
 
 Debian 10系统
 ```
