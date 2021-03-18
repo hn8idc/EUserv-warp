@@ -21,7 +21,7 @@
 echo -e "nameserver 2001:67c:2b0::4\nnameserver 2001:67c:2b0::6" > /etc/resolv.conf
 
 
-### 三、复制相应脚本，一键到底！
+### 三、水平有限，请复制相应系统的脚本，一键到底！
 
 
 
