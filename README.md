@@ -16,6 +16,7 @@
 
 方法3、嘿呦终端（可不设置DNS64）
 
+有IPV6地址的直接登陆！
 
 ### 二、配置DNS64
 echo -e "nameserver 2001:67c:2b0::4\nnameserver 2001:67c:2b0::6" > /etc/resolv.conf
