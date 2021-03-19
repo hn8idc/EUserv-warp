@@ -1,4 +1,4 @@
-## EUserv IPV6添加WARP IPV4项目（已测试通过Debian 10、Ubuntu 20.04）
+## EUserv IPV6添加WARP IPV4项目（已测试通过Debian 10、Ubuntu 20.04，不支持Centos）
 
 ### 脚本仅针对OpenVZ、LXC架构的IPV6 only VPS,添加WARP IPV4网络支持，默认已设置IPV4优先
 
