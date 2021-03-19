@@ -24,19 +24,15 @@
 echo -e "nameserver 2001:67c:2b0::4\nnameserver 2001:67c:2b0::6" > /etc/resolv.conf
 
 
-### 三、水平有限没有合并，请复制相应系统的脚本，一键到底！
+### 三、一键到底！
 
 
+### Debian 10/Ubuntu 20.04系统
+```
+wget https://raw.githubusercontent.com/YG-tsj/EUserv-addv4-warp/main/ub20db10.sh && chmod +x ub20db10.sh && ./ub20db10.sh
+```
 
-### Debian 10系统
-```
-wget https://raw.githubusercontent.com/YG-tsj/EUserv-addv4-warp/main/db.sh && chmod +x db.sh && ./db.sh
-```
 
-### Ubuntu 20.04系统
-```
-wget https://raw.githubusercontent.com/YG-tsj/EUserv-addv4-warp/main/ub.sh && chmod +x ub.sh && ./ub.sh
-```
 
 ### 感谢P3terx大及原创者们，参考来源：
 https://p3terx.com/archives/debian-linux-vps-server-wireguard-installation-tutorial.html
