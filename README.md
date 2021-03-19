@@ -1,4 +1,5 @@
-### EUserv IPV6添加WARP IPV4（已测试通过Debian 10、Ubuntu 20.04，不支持Centos）
+### EUserv IPV6添加WARP IPV4
+### 已测试通过Debian 10、Ubuntu 20.04，由于ProxySU,A大，P大的Xray协议脚本对Centos不友好，故不做支持Centos系统的脚本了！
 
 ### 脚本仅针对OpenVZ、LXC架构的IPV6 only VPS，添加WARP IPV4网络支持，默认已设置IPV4优先
 
@@ -6,7 +7,7 @@
 ### 详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
 
 ------------------------------------------------------------------------------------
-## 步骤如下
+## 主要步骤如下
 
 ### 一、登陆SSH（PC WIN系统）
 
