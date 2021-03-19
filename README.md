@@ -27,7 +27,7 @@ echo -e "nameserver 2001:67c:2b0::4\nnameserver 2001:67c:2b0::6" > /etc/resolv.c
 ### 三、整合Debian 10与Ubuntu 20.04，一键到底！
 
 
-### Debian 10/Ubuntu 20.04系统
+#### Debian 10/Ubuntu 20.04系统脚本
 ```
 wget https://raw.githubusercontent.com/YG-tsj/EUserv-addv4-warp/main/ub20db10.sh && chmod +x ub20db10.sh && ./ub20db10.sh
 ```
