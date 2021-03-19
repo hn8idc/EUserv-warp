@@ -24,7 +24,7 @@
 echo -e "nameserver 2001:67c:2b0::4\nnameserver 2001:67c:2b0::6" > /etc/resolv.conf
 
 
-### 三、一键到底！
+### 三、整合Debian 10与Ubuntu 20.04，一键到底！
 
 
 ### Debian 10/Ubuntu 20.04系统
