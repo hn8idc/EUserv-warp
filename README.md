@@ -1,8 +1,11 @@
 ### EUserv IPV6添加WARP IPV4
-### 已测试通过Debian 10、Ubuntu 20.04，由于ProxySU,A大，P大的Xray协议脚本对Centos不友好，故不做支持Centos系统的脚本了！
 
 ### 脚本仅针对OpenVZ、LXC架构的IPV6 only VPS，添加WARP IPV4网络支持，默认已设置IPV4优先
 
+### 已测试通过Debian 10、Ubuntu 20.04，由于ProxySU，mack-a，phlinhng三大IPV6 Xray脚本对Centos并不友好，容易报错，故不做支持Centos系统的脚本了！
+mack-a：https://github.com/mack-a/v2ray-agent
+phlinhng：https://github.com/phlinhng/v2ray-tcp-tls-web
+ProxySU：https://github.com/proxysu/ProxySU
 
 ### 详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
 
