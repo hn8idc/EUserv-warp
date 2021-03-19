@@ -10,17 +10,17 @@
 
 ### 一、登陆SSH（PC WIN系统）
 
-开启IPV6网络方法
+开启IPV6网络方法：
 
 方法1、电脑本地隧道  https://youtu.be/MPAP1jabQgE
 
 方法2、IPV4跳板机   https://youtu.be/1Gq25zIEsRY
 
-方法3、嘿呦终端      谷歌上太多教程
+方法3、嘿呦终端      最小白的方法，自行google
 
 有IPV6地址的直接登陆！
 
-### 二、配置DNS64
+### 二、配置DNS64（脚本从Github拉取数据，后续会被脚本内的设置的DNS IPV6地址所取代）
 echo -e "nameserver 2001:67c:2b0::4\nnameserver 2001:67c:2b0::6" > /etc/resolv.conf
 
 
