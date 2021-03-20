@@ -1,6 +1,6 @@
 ## EUserv IPV6添加WARP IPV4
 
-### 脚本仅针对OpenVZ、LXC架构的IPV6 only VPS，添加WARP IPV4网络支持，默认已设置IPV4优先
+### 脚本仅针对OpenVZ、LXC架构的IPV6 only VPS，添加WARP IPV4网络支持，默认已设置WARP IPV4优先
 
 ### 已测试通过Debian 10、Ubuntu 20.04，由于ProxySU，mack-a，phlinhng三大IPV6 Xray脚本对Centos并不友好，容易报错，故不做支持Centos系统的脚本了！
 mack-a：https://github.com/mack-a/v2ray-agent
@@ -38,7 +38,7 @@ echo -e "nameserver 2001:67c:2b0::4\nnameserver 2001:67c:2b0::6" > /etc/resolv.c
 wget https://raw.githubusercontent.com/YG-tsj/EUserv-addv4-warp/main/ub20db10.sh && chmod +x ub20db10.sh && ./ub20db10.sh
 ```
 
-#### 由于默认设置IPV4优先，可能你有时不希望IPV4优先（比如有些脚本申请证书识别报错），那么可以先关，再开（虽然重启后自动会开）
+#### 由于默认设置WARP IPV4优先，可能你有时不希望WARP IPV4优先（比如有些脚本申请证书识别报错），那么可以先关，再开（虽然重启后自动会开）
 
 手动关闭WARP网络接口
 ```
