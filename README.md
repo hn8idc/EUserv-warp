@@ -50,6 +50,10 @@ wg-quick down wgcf
 wg-quick up wgcf
 ```
 
+查看WARP当前状态
+```
+wg
+```
 
 
 ### 感谢P3terx大及原创者们，参考来源：
