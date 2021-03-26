@@ -57,8 +57,10 @@ wg-quick up wgcf
 wg
 ```
 
-#### 安装完脚本后，如末尾提示：job for wg-quick@ wgcf.service failed because the control process exited with error code.
-See "systemctl status wg-quick@ wgcf.service" and "journalctl -xe" for details。    说明没成功，继续重装脚本，直接到没提示为止！！
+#### 安装完脚本后，如末尾提示：
+job for wg-quick@ wgcf.service failed because the control process exited with error code.
+See "systemctl status wg-quick@ wgcf.service" and "journalctl -xe" for details。    
+说明没成功，继续重装脚本，直接到没提示为止！！
 
 
 ### 感谢P3terx大及原创者们，参考来源：
