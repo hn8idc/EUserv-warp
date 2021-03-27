@@ -49,7 +49,7 @@ wg
 wget https://raw.githubusercontent.com/YG-tsj/EUserv-addv4-warp/main/ub20db10.sh && chmod +x ub20db10.sh && ./ub20db10.sh
 ```
 
-#### 由于默认设置WARP IPV4优先，可能你有时不希望WARP IPV4优先（比如有些脚本申请证书识别报错），那么可以先关，再开（虽然重启后自动会开）
+#### 由于默认设置WARP IPV4优先，可能你有时不希望WARP IPV4优先，那么可以先关，再开（虽然重启后自动会开）
 
 手动关闭WARP网络接口
 ```
