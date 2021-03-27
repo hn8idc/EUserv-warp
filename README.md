@@ -14,16 +14,8 @@ ProxySU：https://github.com/proxysu/ProxySU
 ### 详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
 
 ------------------------------------------------------------------------------------
-## 主要步骤如下
 
-### 二、配置DNS64（仅从Github拉取安装脚本数据用，后续会被脚本内设置的公共DNS IPV6地址所取代，这样后续解析效果会更好）
-echo -e "nameserver 2001:67c:2b0::4\nnameserver 2001:67c:2b0::6" > /etc/resolv.conf
-
-
-### 三、整合Debian 10与Ubuntu 20.04，一键到底！
-
-
-#### Debian 10/Ubuntu 20.04系统脚本
+#### Debian 10/Ubuntu 20.04系统脚本,一键到底！
 ```
 wget https://raw.githubusercontent.com/YG-tsj/EUserv-addv4-warp/main/ub20db10.sh && chmod +x ub20db10.sh && ./ub20db10.sh
 ```
