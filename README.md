@@ -11,7 +11,6 @@ phlinhng：https://github.com/phlinhng/v2ray-tcp-tls-web
 
 ProxySU：https://github.com/proxysu/ProxySU
 
-### 详细视频教程及探讨(目前已被针对)：https://youtu.be/78dZgYFS-Qo
 
 ### 最新德鸡EUserv核平进行中教程发布：待定
 
@@ -36,11 +35,15 @@ chmod +x DIG9.sh && ./DIG9.sh
 wg
 ```
 
-自行安装任意的脚本吧。enjoy!
+#### 结束
 
-------------------------------------------------------------------------------------
+#### 自行安装任意的脚本吧。enjoy!
 
-#### Debian 10/Ubuntu 20.04系统脚本,一键到底！（此脚本日后无法直接用）
+------------------------------------------------------------------------------------—----------------------------------------
+
+### 详细视频教程及探讨(目前已被针对)：https://youtu.be/78dZgYFS-Qo
+
+#### Debian 10/Ubuntu 20.04系统脚本,一键到底！（此脚本脚本仅针对OpenVZ、LXC架构的IPV6 only VPS）
 ```
 wget https://raw.githubusercontent.com/YG-tsj/EUserv-addv4-warp/main/ub20db10.sh && chmod +x ub20db10.sh && ./ub20db10.sh
 ```
