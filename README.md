@@ -1,4 +1,4 @@
-
+# 更新中。。
 
 ## EUserv IPV6添加WARP IPV4
 
@@ -11,7 +11,28 @@ phlinhng：https://github.com/phlinhng/v2ray-tcp-tls-web
 
 ProxySU：https://github.com/proxysu/ProxySU
 
-### 详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
+### 详细视频教程及探讨(目前已被针对)：https://youtu.be/78dZgYFS-Qo
+
+### 最新德鸡EUserv核平进行中教程发布：待定
+
+一、准备三个文件
+可直接在本项目中下载这三个文件，如要最新版请下载1与2
+1、wgcf官方最新下载：https://github.com/ViRb3/wgcf/releases 选择linux_amd64 重命名为wgcf 
+2、wireguard-go P3大最新下载：https://github.com/P3TERX/wireguard-go-builder/releases 选择linux-amd64.tar.gz 解压后重命名为wireguard-go
+3、DIG9.SH脚本文件自行下载
+以上三个文件直接拖到德鸡/root目录上
+
+二、直接运行脚本：
+```
+chmod +x DIG9.sh && ./DIG9.sh
+```
+
+是否成功输入
+``` 
+wg
+```
+
+自行安装任意的脚本吧。enjoy!
 
 ------------------------------------------------------------------------------------
 
