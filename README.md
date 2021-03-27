@@ -30,7 +30,8 @@ ProxySU：https://github.com/proxysu/ProxySU
 chmod +x DIG9.sh && ./DIG9.sh
 ```
 
-是否成功输入
+
+是否成功，请输入
 ``` 
 wg
 ```
