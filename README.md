@@ -1,4 +1,4 @@
-### 2021.3.25突发：目前个别EUserv出现无法连接外网现象，添加DNS64已无效。表现为进入SSH后，服务器名称变成DIG9，即root@DIG9。如果你的EUserv是这种表现，很不幸，目前暂时无解。
+
 
 ## EUserv IPV6添加WARP IPV4
 
