@@ -21,13 +21,13 @@ ProxySU：https://github.com/proxysu/ProxySU
 
 2、wireguard-go P3大最新下载：https://github.com/P3TERX/wireguard-go-builder/releases 选择linux-amd64.tar.gz 解压后重命名为wireguard-go
 
-3、DIG9.SH脚本文件自行下载
+3、EUdig9.sh脚本文件自行下载
 
 以上三个文件直接拖到德鸡/root目录上
 
 ## 二、直接运行脚本：
 ```
-chmod +x DIG9.sh && ./DIG9.sh
+chmod +x EUdig9.sh && ./EUdig9.sh
 ```
 
 
