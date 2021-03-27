@@ -16,18 +16,6 @@ ProxySU：https://github.com/proxysu/ProxySU
 ------------------------------------------------------------------------------------
 ## 主要步骤如下
 
-### 一、登陆SSH（PC WIN系统）
-
-开启IPV6网络方法：
-
-方法1、电脑本地隧道  https://youtu.be/MPAP1jabQgE
-
-方法2、IPV4跳板机   https://youtu.be/1Gq25zIEsRY
-
-方法3、嘿呦终端      最小白的方法，自行google
-
-有IPV6地址的直接登陆！
-
 ### 二、配置DNS64（仅从Github拉取安装脚本数据用，后续会被脚本内设置的公共DNS IPV6地址所取代，这样后续解析效果会更好）
 echo -e "nameserver 2001:67c:2b0::4\nnameserver 2001:67c:2b0::6" > /etc/resolv.conf
 
@@ -61,6 +49,8 @@ wg
 job for wg-quick@ wgcf.service failed because the control process exited with error code.
 See "systemctl status wg-quick@ wgcf.service" and "journalctl -xe" for details。    
 说明没成功，继续重装脚本，直到没提示为止！！
+---------------------------------------------------------------------------------------------------------------------
+
 
 
 ### 感谢P3terx大及原创者们，参考来源：
