@@ -14,6 +14,8 @@ ProxySU：https://github.com/proxysu/ProxySU
 
 ### 最新德鸡EUserv核平进行中教程发布：待定
 
+## 0：先重装系统吧！！
+
 ## 一、准备三个文件
 可直接在本项目中下载这三个文件，如要最新版请下载1与2
 
