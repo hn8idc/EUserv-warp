@@ -5,7 +5,7 @@ echo "deb http://deb.debian.org/debian $(lsb_release -sc)-backports main" | sudo
 apt update
 apt install net-tools iproute2 openresolv dnsutils -y
 apt install wireguard-tools --no-install-recommends
-curl -fsSL git.io/wireguard-go.sh | sudo bash
+wget -N -P /usr/bin https://github.com/YG-tsj/EUserv-addv4-warp/blob/main/wireguard-go
 curl -fsSL git.io/wgcf.sh | sudo bash
 chmod +x /usr/local/bin/wgcf
 echo | wgcf register
