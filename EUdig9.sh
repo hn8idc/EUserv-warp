@@ -11,8 +11,6 @@ wgcf generate
 sed -i 's/engage.cloudflareclient.com/2606:4700:d0::a29f:c001/g' wgcf-profile.conf
 sed -i '/\:\:\/0/d' wgcf-profile.conf
 cp wgcf-profile.conf /etc/wireguard/wgcf.conf
-ln -s /usr/bin/resolvectl /usr/local/bin/resolvconf
-ln -sf /lib/systemd/system/systemd-resolved.service /etc/systemd/system/dbus-org.freedesktop.resolve1.service
 systemctl enable wg-quick@wgcf
 systemctl start wg-quick@wgcf
 echo 'precedence  ::ffff:0:0/96   100' | sudo tee -a /etc/gai.conf
