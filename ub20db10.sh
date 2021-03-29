@@ -16,4 +16,4 @@ cp wgcf-profile.conf /etc/wireguard/wgcf.conf
 systemctl enable wg-quick@wgcf
 systemctl start wg-quick@wgcf
 echo 'precedence  ::ffff:0:0/96   100' | sudo tee -a /etc/gai.conf
-echo -e "完成了，可以 ping google.com 试试看了\n如果没出问题，这里应该能显示你的IP：$(wget -qO- ipv4.ip.sb) <=如果这里是空的，大概是失败了"
+echo -e "完成了，可以 ping 1.1.1.1 试试看了\n如果没出问题，这里应该能显示你的IP：$(wget -qO- ipv4.ip.sb) <=如果这里是空的，大概是失败了"
