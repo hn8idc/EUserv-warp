@@ -65,10 +65,6 @@ wg-quick up wgcf
 wg
 ```
 
-#### 安装完脚本后，如末尾提示：
-job for wg-quick@ wgcf.service failed because the control process exited with error code.
-See "systemctl status wg-quick@ wgcf.service" and "journalctl -xe" for details。    
-说明没成功，继续重装脚本，直到没提示为止！！
 
 ---------------------------------------------------------------------------------------------------------------------
 ### 感谢杀鸡取卵方案作者F大！参考来源：
