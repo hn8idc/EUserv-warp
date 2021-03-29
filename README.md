@@ -1,4 +1,4 @@
-# 更新中。。
+# 更新中。推荐只使用德班，debain!!!!。
 
 ## EUserv IPV6添加WARP IPV4
 
