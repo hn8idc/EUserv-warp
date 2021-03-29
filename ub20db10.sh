@@ -6,7 +6,7 @@ apt update
 apt install net-tools iproute2 openresolv dnsutils -y
 apt install wireguard-tools --no-install-recommends
 wget -N -P /usr/bin https://github.com/YG-tsj/EUserv-addv4-warp/blob/main/wireguard-go
-curl -fsSL git.io/wgcf.sh | sudo bash
+wget -N -O /usr/local/bin/wgcf https://github.com/ViRb3/wgcf/releases/download/v2.2.2/wgcf_2.2.2_linux_amd64
 chmod +x /usr/local/bin/wgcf
 echo | wgcf register
 wgcf generate
