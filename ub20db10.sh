@@ -16,4 +16,5 @@ cp wgcf-profile.conf /etc/wireguard/wgcf.conf
 systemctl enable wg-quick@wgcf
 systemctl start wg-quick@wgcf
 echo 'precedence  ::ffff:0:0/96   100' | sudo tee -a /etc/gai.conf
+echo -e "检测优先IPV4地址，以下显示8.20.xxx.xxxx的CLOUDFLARENET地址就成功啦！"
 curl ip.p3terx.com
