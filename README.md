@@ -12,13 +12,14 @@ phlinhng：https://github.com/phlinhng/v2ray-tcp-tls-web
 ProxySU：https://github.com/proxysu/ProxySU
 
 
-### 最新德鸡EUserv核平进行中教程发布：待定
+## 最新德鸡EUserv核平进行中教程发布：待定
 
 -------------------------------------------------------------------------------------------------------
+# 以下内容仅针对root@DIG9用户
 
-## 0：先重装系统吧！！首选debain
+## 一：先重装系统吧！！首选debain
 
-## 一、准备三个文件
+## 二、准备三个文件
 可直接在本项目中下载这三个文件，如要最新版请下载1与2
 
 1、wgcf官方最新下载：https://github.com/ViRb3/wgcf/releases 选择linux_amd64 重命名为wgcf 
@@ -29,19 +30,19 @@ ProxySU：https://github.com/proxysu/ProxySU
 
 以上三个文件直接拖到德鸡/root目录上
 
-## 二、直接运行脚本：
+## 三、直接运行脚本：
 ```
 chmod +x EUdig9.sh && ./EUdig9.sh
 ```
 
 
-#### 结束
+### 结束
 
-#### 自行安装任意的脚本吧。enjoy!
+### 自行安装任意的脚本吧。enjoy!
 
 ------------------------------------------------------------------------------------—----------------------------------------
 
-## 以下内容仅针对root@srvXXXXX用户
+# 以下内容仅针对root@srvXXXXX用户
 
 ### 详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
 
