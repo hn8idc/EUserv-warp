@@ -16,4 +16,5 @@ ln -sf /lib/systemd/system/systemd-resolved.service /etc/systemd/system/dbus-org
 systemctl enable wg-quick@wgcf
 systemctl start wg-quick@wgcf
 echo 'precedence  ::ffff:0:0/96   100' | sudo tee -a /etc/gai.conf
-echo -e "完成了，可以 ping google.com 试试看了\n如果没出问题，这里应该能显示你的IP：$(wget -qO- ip.ip.sb) <=如果这里是空的，大概是失败了"
+echo -e "检测是否启动优先IPV4地址，如以下显示8.20.xxx.xxx的CLOUDFLARENET地址，就说明成功啦！否则，再重新运行脚本吧"
+curl ip.p3terx.com
