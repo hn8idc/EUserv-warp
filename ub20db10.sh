@@ -17,5 +17,5 @@ cp wgcf-profile.conf /etc/wireguard/wgcf.conf
 systemctl enable wg-quick@wgcf
 systemctl start wg-quick@wgcf
 echo 'precedence  ::ffff:0:0/96   100' | sudo tee -a /etc/gai.conf
-echo -e "检测是否启动优先IPV4地址，如果下方显示8.20.xxx.xxx的Cloudflare net地址，就说明一切都成功啦！……否则，再重新运行脚本吧"
+echo -e "检测是否优先启动Warp IPV4地址：如果下方显示为8.20……开头的IPV4地址，就说明成功啦！……否则，再重新运行脚本吧"
 curl ip.p3terx.com
