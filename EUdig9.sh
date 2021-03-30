@@ -1,3 +1,4 @@
+echo -e "search blue.kundencontroller.de\noptions rotate\nnameserver 2a02:180:6:5::1c\nnameserver 2a02:180:6:5::4\nnameserver 2a02:180:6:5::1e\nnameserver 2a02:180:6:5::1d" > /etc/resolv.conf
 apt update && apt install curl sudo lsb-release iptables -y
 echo "deb http://deb.debian.org/debian $(lsb_release -sc)-backports main" | sudo tee /etc/apt/sources.list.d/backports.list
 apt update
@@ -15,5 +16,5 @@ cp wgcf-profile.conf /etc/wireguard/wgcf.conf
 systemctl enable wg-quick@wgcf
 systemctl start wg-quick@wgcf
 echo 'precedence  ::ffff:0:0/96   100' | sudo tee -a /etc/gai.conf
-echo -e "检测是否启动优先IPV4地址，如果下方显示8.20.xxx.xxx的Cloudflare net地址，就说明一切都成功啦！……否则，再重新运行脚本吧"
+echoContent green "检测是否启动优先IPV4地址，如果下方显示8.20.xxx.xxx的Cloudflare net地址，就说明一切都成功啦！……否则，再重新运行脚本吧"
 curl ip.p3terx.com
