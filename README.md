@@ -4,13 +4,10 @@
 
 ### 脚本仅针对OpenVZ、LXC架构的IPV6 only VPS，添加WARP IPV4网络支持，默认已设置WARP IPV4优先
 
-### 已测试通过Debian 10、Ubuntu 20.04，推荐用ProxySU，mack-a，phlinhng三大IPV6 Xray脚本。
+### 已测试通过Debian 10、Ubuntu 20.04，推荐用mack-a，phlinhng三大IPV6 Xray脚本。
 mack-a：https://github.com/mack-a/v2ray-agent
 
 phlinhng：https://github.com/phlinhng/v2ray-tcp-tls-web
-
-ProxySU：https://github.com/proxysu/ProxySU
-
 
 ## 最新德鸡EUserv核平进行中教程发布：待定
 
