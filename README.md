@@ -1,22 +1,15 @@
-# 更新中。推荐只使用德班，debain!!!!。
+# 更新中，后续还有变………………
 
-## EUserv IPV6添加WARP IPV4
+### EUserv IPV6添加WARP IPV4，脚本仅针对OpenVZ、LXC架构的IPV6 only VPS，添加WARP IPV4网络支持，默认已设置WARP IPV4优先
 
-### 脚本仅针对OpenVZ、LXC架构的IPV6 only VPS，添加WARP IPV4网络支持，默认已设置WARP IPV4优先
-
-### 推荐用mack-a，phlinhng两大IPV6 Xray脚本。
-mack-a：https://github.com/mack-a/v2ray-agent
-
-phlinhng：https://github.com/phlinhng/v2ray-tcp-tls-web
-
-## 最新德鸡EUserv核平进行中教程发布：待定
+## 最新德鸡EUserv-DIG9危机教程视频发布：待定…………
 
 -------------------------------------------------------------------------------------------------------
 # 以下内容仅针对root@DIG9用户
 
-## 一：先重装系统吧！！首选debain，不要添加NAT64,不要添加NAT64,不要添加NAT64
+#### 一：建议使用debain系统，不要添加DNS64,不要添加DNS64,不要添加DNS64
 
-## 二、准备三个文件
+#### 二、准备三个文件
 可直接在本项目中下载这三个文件，如要最新版请下载1与2
 
 1、wgcf官方最新下载：https://github.com/ViRb3/wgcf/releases 选择linux_amd64 重命名为wgcf 
@@ -27,28 +20,33 @@ phlinhng：https://github.com/phlinhng/v2ray-tcp-tls-web
 
 以上三个文件直接拖到德鸡/root目录上
 
-## 三、直接运行脚本：
+#### 三、直接运行脚本：
 ```
 chmod +x EUdig9.sh && ./EUdig9.sh
 ```
 
-
-### 结束
-
-### 自行安装任意的脚本吧。enjoy!
+#### 结束,自行安装任意的脚本吧。
 
 ------------------------------------------------------------------------------------—----------------------------------------
 
 # 以下内容仅针对root@srvXXXXX用户
 
-### 详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
+## 详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
 
-#### Debian 10/Ubuntu 20.04系统脚本,一键到底！（此脚本脚本仅针对OpenVZ、LXC架构的IPV6 only VPS）
+#### 一、添加DNS64
+
+```
+echo -e "nameserver 2001:67c:2b0::4\nnameserver 2001:67c:2b0::6" > /etc/resolv.conf
+```
+
+#### 二、Debian 10/Ubuntu 20.04系统脚本,一键到底！
 ```
 wget https://raw.githubusercontent.com/YG-tsj/EUserv-addv4-warp/main/ub20db10.sh && chmod +x ub20db10.sh && ./ub20db10.sh
 ```
 
-#### 由于默认设置WARP IPV4优先，可能你有时不希望WARP IPV4优先，那么可以先关，再开（虽然重启后自动会开）
+------------------------------------------------------------------------------------------------------------- 
+ 
+### 由于默认设置WARP IPV4优先，可能你有时不希望WARP IPV4优先，那么可以先关，再开（虽然重启后会自动打开）
 
 手动关闭WARP网络接口
 ```
@@ -60,10 +58,16 @@ wg-quick down wgcf
 wg-quick up wgcf
 ```
 
-查看WARP当前状态
+查看WARP当前统计状态
 ```
 wg
 ```
+
+## 推荐用mack-a，phlinhng两大IPV6 Xray脚本。
+
+mack-a：https://github.com/mack-a/v2ray-agent
+
+phlinhng：https://github.com/phlinhng/v2ray-tcp-tls-web
 
 
 ---------------------------------------------------------------------------------------------------------------------
