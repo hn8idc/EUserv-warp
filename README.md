@@ -25,7 +25,11 @@
 chmod +x EUdig9.sh && ./EUdig9.sh
 ```
 
-#### 结束,自行安装任意的脚本吧。
+### 四、推荐用mack-a，phlinhng两大IPV6 Xray脚本。
+
+mack-a：https://github.com/mack-a/v2ray-agent
+
+phlinhng：https://github.com/phlinhng/v2ray-tcp-tls-web
 
 ------------------------------------------------------------------------------------—----------------------------------------
 
@@ -43,6 +47,12 @@ echo -e "nameserver 2001:67c:2b0::4\nnameserver 2001:67c:2b0::6" > /etc/resolv.c
 ```
 wget https://raw.githubusercontent.com/YG-tsj/EUserv-addv4-warp/main/ub20db10.sh && chmod +x ub20db10.sh && ./ub20db10.sh
 ```
+
+### 推荐用mack-a，phlinhng两大IPV6 Xray脚本。
+
+mack-a：https://github.com/mack-a/v2ray-agent
+
+phlinhng：https://github.com/phlinhng/v2ray-tcp-tls-web
 
 ------------------------------------------------------------------------------------------------------------- 
  
@@ -62,13 +72,6 @@ wg-quick up wgcf
 ```
 wg
 ```
-
-## 推荐用mack-a，phlinhng两大IPV6 Xray脚本。
-
-mack-a：https://github.com/mack-a/v2ray-agent
-
-phlinhng：https://github.com/phlinhng/v2ray-tcp-tls-web
-
 
 ---------------------------------------------------------------------------------------------------------------------
 ### 感谢杀鸡取卵方案作者F大！参考来源：
