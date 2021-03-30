@@ -1,4 +1,4 @@
-# 更新中，后续还有变………………
+# 2021.3.30更新中，后续还有变………………
 
 ### EUserv IPV6添加WARP IPV4，脚本仅针对OpenVZ、LXC架构的IPV6 only VPS，添加WARP IPV4网络支持，默认已设置WARP IPV4优先
 
@@ -25,7 +25,7 @@
 chmod +x EUdig9.sh && ./EUdig9.sh
 ```
 
-### 四、推荐用mack-a，phlinhng两大IPV6 Xray脚本。
+### 推荐用mack-a，phlinhng两大IPV6 Xray脚本。
 
 mack-a：https://github.com/mack-a/v2ray-agent
 
