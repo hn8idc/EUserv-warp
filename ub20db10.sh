@@ -5,8 +5,8 @@ echo "deb http://deb.debian.org/debian $(lsb_release -sc)-backports main" | sudo
 apt update
 apt install net-tools iproute2 openresolv dnsutils -y
 apt install wireguard-tools --no-install-recommends
-curl -fsSL git.io/wireguard-go.sh | sudo bash
-curl -fsSL git.io/wgcf.sh | sudo bash
+wget https://raw.githubusercontent.com/P3TERX/script/master/wireguard-go.sh | sudo bash
+wget https://raw.githubusercontent.com/P3TERX/script/master/wgcf.sh | sudo bash
 echo | wgcf register
 wgcf generate
 sed -i 's/engage.cloudflareclient.com/2606:4700:d0::a29f:c001/g' wgcf-profile.conf
