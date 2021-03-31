@@ -45,7 +45,7 @@ echo -e "nameserver 2001:67c:2b0::4\nnameserver 2001:67c:2b0::6" > /etc/resolv.c
 
 #### 二、Debian 10/Ubuntu 20.04系统脚本,一键到底！
 ```
-wget https://raw.githubusercontent.com/YG-tsj/EUserv-addv4-warp/main/ub20db10.sh && chmod +x ub20db10.sh && ./ub20db10.sh
+wget https://raw.githubusercontent.com/YG-tsj/EUserv-addv4-warp/main/warp.sh && chmod +x warp.sh && ./warp.sh
 ```
 
 ### 推荐用mack-a，phlinhng两大IPV6 Xray脚本。
