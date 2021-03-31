@@ -37,13 +37,9 @@ phlinhng：https://github.com/phlinhng/v2ray-tcp-tls-web
 
 ## 详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
 
-#### 一、添加DNS64
+#### 一、无须添加DNS/NAT64，直接运行以下脚本
 
-```
-echo -e "nameserver 2001:67c:2b0::4\nnameserver 2001:67c:2b0::6" > /etc/resolv.conf
-```
-
-#### 二、Debian 10/Ubuntu 20.04系统脚本,一键到底！
+#### 二、Debian 10/Ubuntu 20.04系统脚本（已添加IPV6直接支持）,一键到底！
 ```
 wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-addv4-warp/srvDIG9.sh|bash
 ```
