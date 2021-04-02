@@ -6,11 +6,7 @@
 ### 最新德鸡EUserv-DIG9危机教程及探讨发布：即将…………
 
 -------------------------------------------------------------------------------------------------------
-##### 德鸡EUserv开始封杀传统方案（更改DNS/NAT64来获取IPV4网络），仅允许IPV6下载及访问！
-
-##### 好吧！被倒逼成这样，那就来个统一！不管你进入SSH后显示的是root@DIG9与root@srv数字，我们一率不添加DNS64！！
-
-### 简单步骤如下，详情分析移步上面视频：
+##### 德鸡EUserv开始封杀传统方案（更改DNS/NAT64来获取IPV4网络），仅允许IPV6下载及访问！现在开始，不管你进入SSH后显示的是root@DIG9与root@srv数字，我们一率不添加DNS64！！
 
 #### 一：恢复官方DNS64（重装系统者，可直接跳到第二步脚本安装）
 ```
@@ -22,6 +18,9 @@ echo -e "search blue.kundencontroller.de\noptions rotate\nnameserver 2a02:180:6:
 wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-addv4-warp/srvDIG9.sh|bash
 ```
 
+#### 三、搞定，IPV4回来了！
+
+--------------------------------------------------------------------------------------
 #### 推荐用mack-a，phlinhng两大IPV6 Xray脚本。
 
 1、mack-a 脚本：
