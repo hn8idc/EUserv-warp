@@ -1,4 +1,4 @@
-# 2021.4.1更新中，第二部分目前新功能加入！测试中！勿用！！
+# 2021.4.1更新中
 
 ### EUserv IPV6添加WARP IPV4，脚本仅针对OpenVZ、LXC架构的IPV6 only VPS，添加WARP IPV4网络支持，默认已设置WARP IPV4优先
 
