@@ -2,44 +2,23 @@
 
 ### EUserv IPV6添加WARP IPV4，脚本仅针对OpenVZ、LXC架构的IPV6 only VPS，添加WARP IPV4网络支持，默认已设置WARP IPV4优先
 
-## 最新德鸡EUserv-DIG9危机教程视频发布：待定…………
+## 原先详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
+
+## 最新德鸡EUserv-DIG9危机教程及探讨视频发布：即将…………
 
 -------------------------------------------------------------------------------------------------------
-# 第一部分：以下内容仅针对root@DIG9用户（觉得麻烦，可以直接用第二部分的脚本）
+### 原先WARP德鸡EUserv教程发布没多久，德鸡开始封杀传统方案（更改DNS/NAT64来获取IPV4的网络），现只让使用IPV6来下载及访问，以封杀IPV4！
 
-#### 一：建议使用debain系统，不要添加DNS64,不要添加DNS64,不要添加DNS64
+### 好吧！如此就来个统一！不管你进入SSH后显示的是root@DIG9与root@srv数字，我们一率不用DNS64，且我们就只走IPV6！
 
-#### 二、准备三个文件
-可直接在本项目中下载这三个文件，如要最新版请下载1与2
+## 注意点及步骤如下：
 
-1、wgcf官方最新下载：https://github.com/ViRb3/wgcf/releases 选择linux_amd64 重命名为wgcf 
-
-2、wireguard-go P3大最新下载：https://github.com/P3TERX/wireguard-go-builder/releases 选择linux-amd64.tar.gz 解压后重命名为wireguard-go
-
-3、EUdig9.sh脚本文件自行下载
-
-以上三个文件直接拖到德鸡/root目录上
-
-#### 三、直接运行脚本：
+#### 一：恢复官方DNS64（重装系统者，可直接跳到第二步）
 ```
-chmod +x EUdig9.sh && ./EUdig9.sh
+echo -e "search blue.kundencontroller.de\noptions rotate\nnameserver 2a02:180:6:5::1c\nnameserver 2a02:180:6:5::4\nnameserver 2a02:180:6:5::1e\nnameserver 2a02:180:6:5::1d" > /etc/resolv.conf
 ```
 
-### 推荐用mack-a，phlinhng两大IPV6 Xray脚本。
-
-mack-a：https://github.com/mack-a/v2ray-agent
-
-phlinhng：https://github.com/phlinhng/v2ray-tcp-tls-web
-
-------------------------------------------------------------------------------------—----------------------------------------
-
-# 第二部分：以下内容仅针对root@srvXXXXX用户
-
-## 详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
-
-#### 一、无须添加DNS/NAT64，直接运行以下脚本
-
-#### 二、Debian 10/Ubuntu 20.04系统脚本（已添加IPV6直接支持）,一键到底！
+#### 二、无须添加DNS64！！！Debian 10/Ubuntu 20.04系统脚本（已添加IPV6直接支持）,一键到底！
 ```
 wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-addv4-warp/srvDIG9.sh|bash
 ```
@@ -77,10 +56,6 @@ curl ip.p3terx.com
 ```
 
 ---------------------------------------------------------------------------------------------------------------------
-感谢杀鸡取卵方案原作者F大！参考来源：
- 
-项目地址：https://github.com/fscarmen/warp/tree/main/DiG9
-
 
 感谢P3terx大及原创者们，参考来源：
  
