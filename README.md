@@ -6,13 +6,13 @@
 ### 最新德鸡EUserv-DIG9危机教程及探讨发布：即将…………
 
 -------------------------------------------------------------------------------------------------------
-### 原先WARP德鸡EUserv教程发布没多久，德鸡开始封杀传统方案（更改DNS/NAT64来获取IPV4的网络），现只让使用IPV6来下载及访问！
+### 德鸡EUserv开始封杀传统方案（更改DNS/NAT64来获取IPV4网络），仅允许IPV6下载及访问！
 
-### 好吧！如此就来个统一！不管你进入SSH后显示的是root@DIG9与root@srv数字，我们一率不用DNS64，且我们就只走IPV6！
+### 好吧！被倒逼成这样，那就来个统一！不管你进入SSH后显示的是root@DIG9与root@srv数字，我们一率不添加DNS64！！
 
-### 注意点及步骤如下：
+### 简单步骤如下，详情分析移步上面视频：
 
-#### 一：恢复官方DNS64（重装系统者，可直接跳到第二步）
+#### 一：恢复官方DNS64（重装系统者，可直接跳到第二步脚本安装）
 ```
 echo -e "search blue.kundencontroller.de\noptions rotate\nnameserver 2a02:180:6:5::1c\nnameserver 2a02:180:6:5::4\nnameserver 2a02:180:6:5::1e\nnameserver 2a02:180:6:5::1d" > /etc/resolv.conf
 ```
@@ -24,9 +24,24 @@ wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-addv4-warp/srvDIG9.sh|bash
 
 #### 推荐用mack-a，phlinhng两大IPV6 Xray脚本。
 
-mack-a：https://github.com/mack-a/v2ray-agent
+1、mack-a 脚本：
+```
+wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
 
-phlinhng：https://github.com/phlinhng/v2ray-tcp-tls-web
+```
+再次进入管理菜单：
+```
+vasma
+```
+
+2、phlinhng 脚本：
+```
+curl -fsSL https://raw.staticdn.net/phlinhng/v2ray-tcp-tls-web/main/src/xwall.sh -o ~/xwall.sh && bash ~/xwall.sh
+```
+再次进入管理菜单：
+```
+bash ~/xwall.sh
+```
 
 ------------------------------------------------------------------------------------------------------------- 
  
