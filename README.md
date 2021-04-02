@@ -21,28 +21,6 @@ wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-addv4-warp/srvDIG9.sh|bash
 
 ##### 三、搞定，IPV4回来了！
 
---------------------------------------------------------------------------------------
-#### 推荐用mack-a，phlinhng两大IPV6 Xray脚本。
-
-1、mack-a 脚本：
-```
-wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
-
-```
-再次进入管理菜单：
-```
-vasma
-```
-
-2、phlinhng 脚本：
-```
-curl -fsSL https://raw.staticdn.net/phlinhng/v2ray-tcp-tls-web/main/src/xwall.sh -o ~/xwall.sh && bash ~/xwall.sh
-```
-再次进入管理菜单：
-```
-bash ~/xwall.sh
-```
-
 ------------------------------------------------------------------------------------------------------------- 
  
 
