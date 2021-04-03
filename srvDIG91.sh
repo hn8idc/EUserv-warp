@@ -19,5 +19,5 @@ systemctl enable wg-quick@wgcf
 systemctl start wg-quick@wgcf
 rm -f srvDIG9* wgcf* wireguard-go*
 grep -qE '^[ ]*precedence[ ]*::ffff:0:0/96[ ]*100' /etc/gai.conf || echo 'precedence ::ffff:0:0/96  100' | sudo tee -a /etc/gai.conf
-echo -e "检测是否优先启动Warp IPV4地址：如果下方显示为8.2X……开头的IPV4地址，就说明成功啦！……如果是2a02开头的IPV6地址，那就再重新运行脚本吧"
+echo -e "\033[33m 检测是否优先启动Warp IPV4地址：下方显示为8.2X……的IPV4地址，就说明成功啦！……如果是2a02开头的IPV6地址（申请WGCF账户失败），请重复运行脚本吧，直到成功为止" \033[0m
 curl ip.p3terx.com
