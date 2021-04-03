@@ -16,12 +16,10 @@ wgcf generate
 sed -i 's/engage.cloudflareclient.com/2606:4700:d0::a29f:c001/g' wgcf-profile.conf
 sed -i '/\:\:\/0/d' wgcf-profile.conf
 cp wgcf-profile.conf /etc/wireguard/wgcf.conf
-ln -s /usr/bin/resolvectl /usr/local/bin/resolvconf
-ln -sf /lib/systemd/system/systemd-resolved.service /etc/systemd/system/dbus-org.freedesktop.resolve1.service
 systemctl enable wg-quick@wgcf
 systemctl start wg-quick@wgcf
 rm -f srvDIG9* wgcf* wireguard-go*
 grep -qE '^[ ]*precedence[ ]*::ffff:0:0/96[ ]*100' /etc/gai.conf || echo 'precedence ::ffff:0:0/96  100' | sudo tee -a /etc/gai.conf
-echo -e "\033[33m 检测是否优先启动Warp IPV4地址： \033[0m"
-curl ip.p3terx.com
-echo -e "\033[32m 如上方显示为8.2X……的IPV4地址，就说明成功啦！……如显示为2a02开头的IPV6本地地址（申请WGCF账户失败），请“无限”重复运行本脚本吧，直到成功为止 \033[0m"
+echo -e "\033[33m 检测是否成功启动Warp IPV4地址： \033[0m"
+wget -qO- ipv4.ip.sb
+echo -e "\033[32m 如上方显示为8.2X……的IPV4地址，就说明成功啦！如没有显示任何东西（申请WGCF账户失败），请“无限”重复运行本脚本吧，直到成功为止！！！ \033[0m"
