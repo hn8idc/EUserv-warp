@@ -21,4 +21,4 @@ systemctl start wg-quick@wgcf
 rm -f srvDIG9* wgcf* wireguard-go*
 grep -qE '^[ ]*precedence[ ]*::ffff:0:0/96[ ]*100' /etc/gai.conf || echo 'precedence ::ffff:0:0/96  100' | sudo tee -a /etc/gai.conf
 echo -e "\033[33m 检测是否成功启动Warp！\n显示IPV4地址IP：$(wget -qO- ipv4.ip.sb) \033[0m"
-echo -e "\033[32m 如上方显示为8.2X……IPV4地址，则说明成功啦！如无任何显示（申请WGCF账户失败），请“无限”重复运行本脚本吧，直到成功为止！！！ \033[0m"
+echo -e "\033[32m 如上方显示为IP：8.2……IPV4地址，则说明成功啦！\n如无IP显示,（说明申请WGCF账户失败），请“无限”重复运行本脚本吧，直到成功为止！！！ \033[0m"
