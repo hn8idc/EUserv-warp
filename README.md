@@ -16,7 +16,7 @@ echo -e "search blue.kundencontroller.de\noptions rotate\nnameserver 2a02:180:6:
 
 ##### 二、无须添加DNS64！！！Debian 10/Ubuntu 20.04系统脚本（已添加IPV6直接支持）,一键到底！
 ```
-wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-addv4-warp/Euv4.sh|bash
+wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-addv4-warp/warp4.sh|bash
 ```
 
 ##### 三、搞定，IPV4回来了！
