@@ -24,13 +24,12 @@ wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-addv4-warp/warp4.sh|bash
 ------------------------------------------------------------------------------------------------------------- 
  
 
-#### 由于默认设置WARP IPV4优先，可能你有时不希望WARP IPV4优先，那么可以先关，再开（虽然重启后会自动打开）
+#### 相关WARP进程命令
 
-手动关闭WARP网络接口
+手动临时关闭WARP网络接口
 ```
 wg-quick down wgcf
 ```
-
 手动开启WARP网络接口 
 ```
 wg-quick up wgcf
@@ -40,6 +39,17 @@ wg-quick up wgcf
 ```
 wg
 ```
+
+systemctl enable wg-quick@wgcf
+
+systemctl start wg-quick@wgcf
+
+systemctl restart wg-quick@wgcf
+
+systemctl stop wg-quick@wgcf
+
+systemctl disable wg-quick@wgcf
+
 
 #### 验证IP优先级
 ```
