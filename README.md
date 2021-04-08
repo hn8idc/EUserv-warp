@@ -1,28 +1,59 @@
 
-#### EUserv IPV6添加WARP IPV4，脚本仅针对OpenVZ、LXC架构的IPV6 only VPS，添加WARP IPV4网络支持，默认已设置WARP IPV4优先
+#### EUserv IPV6添加WARP IPV4，脚本主要针对OpenVZ、LXC架构的IPV6 only VPS，添加WARP IPV4网络支持，默认已设置WARP IPV4优先
 
 #### 原先详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
 
-#### 最新德鸡EUserv-DIG9危机教程及探讨发布：即将…………
+#### 最新德鸡EUserv抛弃DNS64、自定义分流教程：待定…………
 
 -------------------------------------------------------------------------------------------------------
-##### 德鸡EUserv开始封杀传统方案（更改DNS/NAT64来获取IPV4网络），仅允许IPV6下载及访问！
-##### 现在开始，不管你进入SSH后显示的是root@DIG9还是root@srv数字，我们要主动抛弃DNS64！
 
-##### 一：恢复官方DNS64（重装系统者，可直接跳到第二步脚本安装）
+##### 一：恢复EUserv官方DNS64（重装系统者，可直接跳到第二步脚本安装）
 ```
 echo -e "search blue.kundencontroller.de\noptions rotate\nnameserver 2a02:180:6:5::1c\nnameserver 2a02:180:6:5::4\nnameserver 2a02:180:6:5::1e\nnameserver 2a02:180:6:5::1d" > /etc/resolv.conf
 ```
 
-##### 二、无须添加DNS64！！！Debian 10/Ubuntu 20.04系统脚本（已添加IPV6直接支持）,一键到底！
+##### 二、无须添加DNS64！！！Debian 10/Ubuntu 20.04系统脚本（非EUserv的vps ipv6 only）,一键到底！
 ```
 wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-addv4-warp/warp4.sh|bash
 ```
 
-##### 三、搞定，IPV4回来了！
+##### 三、搞定，安装你喜欢的各种脚本吧！
 
 ------------------------------------------------------------------------------------------------------------- 
- 
+### 分流配置文件(文件默认全局IPV4优先)
+```
+{ 
+"outbounds": [
+    {
+      "tag":"IP6-out",
+      "protocol": "freedom",
+      "settings": {}
+    },
+    {
+      "tag":"IP4-out",
+      "protocol": "freedom",
+      "settings": {
+        "domainStrategy": "UseIPv4" 
+      }
+    }
+  ],
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "IP4-out",
+        "domain": [""] 
+      },
+      {
+        "type": "field",
+        "outboundTag": "IP6-out",
+        "network": "udp,tcp" 
+      }
+    ]
+  }
+}
+``` 
+ ---------------------------------------------------------------------------------------------------------
 
 #### 相关WARP进程命令
 
@@ -40,21 +71,15 @@ wg-quick up wgcf
 wg
 ```
 
-systemctl enable wg-quick@wgcf
+启动systemctl enable wg-quick@wgcf
 
-systemctl start wg-quick@wgcf
+开始systemctl start wg-quick@wgcf
 
-systemctl restart wg-quick@wgcf
+重启systemctl restart wg-quick@wgcf
 
-systemctl stop wg-quick@wgcf
+停止systemctl stop wg-quick@wgcf
 
-systemctl disable wg-quick@wgcf
-
-
-#### 验证IP优先级
-```
-curl ip.p3terx.com
-```
+关闭systemctl disable wg-quick@wgcf
 
 ---------------------------------------------------------------------------------------------------------------------
 
