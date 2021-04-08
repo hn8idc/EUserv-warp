@@ -12,7 +12,7 @@
 echo -e "search blue.kundencontroller.de\noptions rotate\nnameserver 2a02:180:6:5::1c\nnameserver 2a02:180:6:5::4\nnameserver 2a02:180:6:5::1e\nnameserver 2a02:180:6:5::1d" > /etc/resolv.conf
 ```
 
-##### 二、无须添加DNS64！！！Debian 10/Ubuntu 20.04系统脚本（非EUserv的vps ipv6 only）,一键到底！
+##### 二、无须添加DNS64！！！Debian 10/Ubuntu 20.04系统脚本,一键到底！
 ```
 wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-addv4-warp/warp4.sh|bash
 ```
