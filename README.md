@@ -17,7 +17,7 @@ echo -e "search blue.kundencontroller.de\noptions rotate\nnameserver 2a02:180:6:
 wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-addv4-warp/warp4.sh|bash
 ```
 
-##### 三、默认已设置SSH下的WARP IPV4优先，安装你喜欢的各种脚本吧！
+##### 三、配置文件wgcf.conf和注册文件wgcf-account.toml都已备份在/etc/wireguard下。此时德鸡EUserv默认已设置SSH下IPV4优先，安装你喜欢的各种脚本吧！
 
 ------------------------------------------------------------------------------------------------------------- 
 ##### 分流配置文件(以下默认全局IPV4优先，详情见视频教程)
