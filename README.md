@@ -1,5 +1,5 @@
 
-#### EUserv IPV6添加WARP IPV4，脚本主要针对OpenVZ、LXC架构的IPV6 only VPS，添加WARP IPV4网络支持，默认已设置WARP IPV4优先
+#### EUserv IPV6添加WARP IPV4，脚本主要针对OpenVZ、LXC架构的IPV6 only VPS，添加WARP IPV4网络支持，默认已设置SSH下的WARP IPV4优先
 
 #### 原先详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
 
