@@ -3,7 +3,7 @@
 
 #### 原先详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
 
-#### 最新德鸡EUserv抛弃DNS64、自定义IP分流教程(推荐)：https://youtu.be/fY9HDLJ7mnM
+#### 最新德鸡EUserv抛弃DNS64、自定义IP分流教程（推荐）：https://youtu.be/fY9HDLJ7mnM
 
 -------------------------------------------------------------------------------------------------------
 
@@ -12,7 +12,7 @@
 echo -e "search blue.kundencontroller.de\noptions rotate\nnameserver 2a02:180:6:5::1c\nnameserver 2a02:180:6:5::4\nnameserver 2a02:180:6:5::1e\nnameserver 2a02:180:6:5::1d" > /etc/resolv.conf
 ```
 
-##### 二、重装系统能解决99%的问题！！无须添加DNS64！！！Debian 10/Ubuntu 20.04系统脚本,一键到底（有无成功可查看脚本末尾提示）！
+##### 二、重装系统能解决99%的问题！！无须添加DNS64！！！Debian 10/Ubuntu 20.04系统脚本（有无成功可查看脚本末尾提示）
 ```
 wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-addv4-warp/WARP4.sh|bash
 ```
