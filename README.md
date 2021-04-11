@@ -1,5 +1,5 @@
 
-#### EUserv IPV6添加WARP IPV4，脚本主要针对OpenVZ、LXC架构的IPV6 only VPS，添加WARP IPV4网络支持！
+#### EUserv IPV6添加WARP IPV4，脚本主要针对OpenVZ、LXC架构的IPV6 only VPS，默认已设置SSH下IPV4优先！
 
 #### 原先详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
 
@@ -17,7 +17,7 @@ echo -e "search blue.kundencontroller.de\noptions rotate\nnameserver 2a02:180:6:
 wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-addv4-warp/warp4.sh|bash
 ```
 
-##### 三、配置文件wgcf.conf和注册文件wgcf-account.toml都已备份在/etc/wireguard下。此时德鸡EUserv默认已设置SSH下IPV4优先，安装你喜欢的各种脚本吧！
+##### 三、配置文件wgcf.conf和注册文件wgcf-account.toml都已备份在/etc/wireguard下!
 
 ------------------------------------------------------------------------------------------------------------- 
 ##### 分流配置文件(以下默认全局IPV4优先，详情见视频教程)
