@@ -12,12 +12,12 @@
 echo -e "search blue.kundencontroller.de\noptions rotate\nnameserver 2a02:180:6:5::1c\nnameserver 2a02:180:6:5::4\nnameserver 2a02:180:6:5::1e\nnameserver 2a02:180:6:5::1d" > /etc/resolv.conf
 ```
 
-##### 二、重装系统能解决99%的问题！！无须添加DNS64！！！Debian 10/Ubuntu 20.04系统脚本（有无成功可查看脚本末尾提示）
+##### 二、重装系统能解决99%的问题！无须添加DNS64！Debian 10/Ubuntu 20.04系统脚本（有无成功可查看脚本末尾提示）
 ```
 wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-addv4-warp/warp4.sh|bash
 ```
 
-##### 三、配置文件wgcf.conf和注册文件wgcf-account.toml都已备份在/etc/wireguard下!
+##### 三、配置文件wgcf.conf和注册文件wgcf-account.toml都已备份在/etc/wireguard下！
 
 ------------------------------------------------------------------------------------------------------------- 
 ##### 分流配置文件(以下默认全局IPV4优先，详情见视频教程)
