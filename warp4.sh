@@ -5,8 +5,8 @@ echo "deb http://deb.debian.org/debian $(lsb_release -sc)-backports main" | sudo
 apt update
 apt install net-tools iproute2 openresolv dnsutils -y
 apt install wireguard-tools --no-install-recommends
-wget https://bitbucket.org/ygtsj/euserv-warp/raw/8cccfd4ba639a5fa3a784e1ae37efb30e58310e4/wgcf
-wget https://bitbucket.org/ygtsj/euserv-warp/raw/8cccfd4ba639a5fa3a784e1ae37efb30e58310e4/wireguard-go
+wget -N -6 https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-addv4-warp/wgcf
+wget -N -6 https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-addv4-warp/wireguard-go
 cp wireguard-go /usr/bin
 cp wgcf /usr/local/bin/wgcf
 chmod +x /usr/local/bin/wgcf
