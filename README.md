@@ -14,7 +14,7 @@ echo -e "search blue.kundencontroller.de\noptions rotate\nnameserver 2a02:180:6:
 
 ##### 二、重装系统能解决99%的问题！无须添加DNS64！Debian 10/Ubuntu 20.04系统脚本（有无成功可查看脚本末尾提示）
 ```
-wget -N https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-addv4-warp/warp4.sh && chmod +x warp4.sh && ./warp4.sh
+wget https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-addv4-warp/warp4.sh && chmod +x warp4.sh && ./warp4.sh
 ```
 
 ##### 三、配置文件wgcf.conf和注册文件wgcf-account.toml都已备份在/etc/wireguard下！
