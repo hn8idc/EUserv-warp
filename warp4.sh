@@ -1,5 +1,5 @@
 #!/bin/bash
-echo -e "\033[1;36m 请 注 意！！！甬 哥 的 脚 本 仅 支 持 Ubuntu 与 Debain 系 统！Warp 仅 接 管 IPV4 \033[0m"
+echo -e "\033[1;36m 请 注 意！！！甬 哥 的 脚 本 仅 支 持 Ubuntu 与 Debain 系 统！！！Warp 仅 添 加 并 接 管 IPV4！！！ \033[0m"
 apt update && apt install curl sudo lsb-release iptables -y
 echo "deb http://deb.debian.org/debian $(lsb_release -sc)-backports main" | sudo tee /etc/apt/sources.list.d/backports.list
 apt update
