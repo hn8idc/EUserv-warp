@@ -27,7 +27,12 @@ wget https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp4.sh && chmod +x warp4.s
 wget https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp64.sh && chmod +x warp64.sh && ./warp64.sh
 ```
 
-##### 配置文件wgcf.conf和注册文件wgcf-account.toml都已备份在/etc/wireguard下！
+##### 查看WARP当前统计状态
+```
+wg
+```
+
+##### 提示：配置文件wgcf.conf和注册文件wgcf-account.toml都已备份在/etc/wireguard下！
 
 ------------------------------------------------------------------------------------------------------------- 
 ##### EUserv专用分流配置文件(以下默认全局IPV4优先，详情见视频教程)
@@ -77,10 +82,6 @@ wg-quick down wgcf
 wg-quick up wgcf
 ```
 
-查看WARP当前统计状态
-```
-wg
-```
 
 启动systemctl enable wg-quick@wgcf
 
