@@ -27,6 +27,8 @@ wget https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp4.sh && chmod +x warp4.s
 wget https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp64.sh && chmod +x warp64.sh && ./warp64.sh
 ```
 
+--------------------------------------------------------------------------------------------------------------
+
 ##### 查看WARP当前统计状态
 ```
 wg
