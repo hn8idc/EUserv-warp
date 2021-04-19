@@ -1,11 +1,11 @@
 
 #### EUserv IPV6添加WARP IPV4，针对OpenVZ、LXC架构的IPV6 only VPS，已设置SSH下IPV4优先!
 
-#### 原先详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
+#### 1、原先详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
 
-#### 最新德鸡EUserv抛弃DNS64、自定义IP分流教程（推荐）：https://youtu.be/fY9HDLJ7mnM
+#### 2、最新德鸡EUserv抛弃DNS64、自定义IP分流教程（推荐）：https://youtu.be/fY9HDLJ7mnM
 
-#### 联合Oracle甲骨文，双栈Warp接管IPV4与IPV6网络：稍后更新
+#### 3、联合Oracle甲骨文，双栈Warp接管IPV4与IPV6网络：稍后更新
 -------------------------------------------------------------------------------------------------------
 
 ##### 一：恢复EUserv官方DNS64（重装系统者，可直接跳到第二步脚本安装）
