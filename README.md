@@ -1,5 +1,5 @@
 
-#### EUserv IPV6添加WARP IPV4，针对OpenVZ、LXC架构的IPV6 only VPS，已设置SSH下IPV4优先!
+#### EUserv IPV6添加WARP双栈IPV6+IPV4，针对OpenVZ、LXC架构的IPV6 only VPS，已设置SSH下IPV4优先!
 
 #### 1、原先详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
 
