@@ -1,10 +1,11 @@
 
-#### EUserv IPV6添加WARP IPV4，脚本主要针对OpenVZ、LXC架构的IPV6 only VPS，Warp仅接管IPV4，已设置SSH下IPV4优先!
+#### EUserv IPV6添加WARP IPV4，针对OpenVZ、LXC架构的IPV6 only VPS，已设置SSH下IPV4优先!
 
 #### 原先详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
 
 #### 最新德鸡EUserv抛弃DNS64、自定义IP分流教程（推荐）：https://youtu.be/fY9HDLJ7mnM
 
+#### 联合Oracle甲骨文，双栈Warp接管IPV4与IPV6网络：稍后更新
 -------------------------------------------------------------------------------------------------------
 
 ##### 一：恢复EUserv官方DNS64（重装系统者，可直接跳到第二步脚本安装）
@@ -12,15 +13,24 @@
 echo -e "search blue.kundencontroller.de\noptions rotate\nnameserver 2a02:180:6:5::1c\nnameserver 2a02:180:6:5::4\nnameserver 2a02:180:6:5::1e\nnameserver 2a02:180:6:5::1d" > /etc/resolv.conf
 ```
 
-##### 二、重装系统能解决99%的问题！无须添加DNS64！Debian 10/Ubuntu 20.04系统脚本（有无成功可查看脚本末尾提示）
+##### 二、重装系统能解决99%的问题！无须添加DNS64！
+
+##### Debian 10/Ubuntu 20.04系统脚本，根据自己需求选择脚本1或者脚本2（有无成功可查看脚本末尾提示）
+
+##### 脚本1：Warp仅接管IPV4网络
 ```
 wget https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp4.sh && chmod +x warp4.sh && ./warp4.sh
 ```
 
-##### 三、配置文件wgcf.conf和注册文件wgcf-account.toml都已备份在/etc/wireguard下！
+##### 脚本2：双栈Warp接管IPV4与IPV6网络
+```
+wget https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp64.sh && chmod +x warp64.sh && ./warp64.sh
+```
+
+##### 配置文件wgcf.conf和注册文件wgcf-account.toml都已备份在/etc/wireguard下！
 
 ------------------------------------------------------------------------------------------------------------- 
-##### 分流配置文件(以下默认全局IPV4优先，详情见视频教程)
+##### EUserv专用分流配置文件(以下默认全局IPV4优先，详情见视频教程)
 ```
 { 
 "outbounds": [
@@ -82,7 +92,6 @@ wg
 
 关闭systemctl disable wg-quick@wgcf
 
-#### 下期彩蛋？可以有！
 
 ---------------------------------------------------------------------------------------------------------------------
 
