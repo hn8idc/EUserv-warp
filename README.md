@@ -1,5 +1,5 @@
 
-#### EUserv IPV6添加WARP IPV4，脚本主要针对OpenVZ、LXC架构的IPV6 only VPS，默认已设置SSH下IPV4优先，Warp仅接管IPV4！
+#### EUserv IPV6添加WARP IPV4，脚本主要针对OpenVZ、LXC架构的IPV6 only VPS，Warp仅接管IPV4，已设置SSH下IPV4优先!
 
 #### 原先详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
 
@@ -14,7 +14,7 @@ echo -e "search blue.kundencontroller.de\noptions rotate\nnameserver 2a02:180:6:
 
 ##### 二、重装系统能解决99%的问题！无须添加DNS64！Debian 10/Ubuntu 20.04系统脚本（有无成功可查看脚本末尾提示）
 ```
-wget https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp64/warp4.sh && chmod +x warp4.sh && ./warp4.sh
+wget https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp4.sh && chmod +x warp4.sh && ./warp4.sh
 ```
 
 ##### 三、配置文件wgcf.conf和注册文件wgcf-account.toml都已备份在/etc/wireguard下！
