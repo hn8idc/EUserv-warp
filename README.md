@@ -3,7 +3,7 @@
 
 #### 1、原先详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
 
-#### 2、最新德鸡EUserv抛弃DNS64、自定义IP分流教程（推荐）：https://youtu.be/fY9HDLJ7mnM
+#### 2、最新德鸡EUserv抛弃DNS64、自定义域名、IP分流教程（推荐）：https://youtu.be/fY9HDLJ7mnM
 
 #### 3、联合Oracle甲骨文https://github.com/YG-tsj/Oracle-warp #双栈Warp接管IPV4与IPV6网络：稍后更新
 -------------------------------------------------------------------------------------------------------
@@ -13,9 +13,9 @@
 echo -e "search blue.kundencontroller.de\noptions rotate\nnameserver 2a02:180:6:5::1c\nnameserver 2a02:180:6:5::4\nnameserver 2a02:180:6:5::1e\nnameserver 2a02:180:6:5::1d" > /etc/resolv.conf
 ```
 
-##### 二、重装系统能解决99%的问题！无须添加DNS64！
+##### 二、重装系统能解决99%的问题！无须添加DNS64！warp单双栈ipv4+ipv6脚本
 
-##### Debian 10/Ubuntu 20.04系统脚本，根据自己需求选择脚本1或者脚本2（有无成功可查看脚本末尾提示）
+##### 推荐Debian 10/Ubuntu 20.04系统，根据自己需求选择脚本1或者脚本2（有无成功可查看脚本末尾提示）
 
 ##### 脚本1：Warp仅接管IPV4网络
 ```
@@ -83,7 +83,6 @@ wg-quick down wgcf
 ```
 wg-quick up wgcf
 ```
-
 
 启动systemctl enable wg-quick@wgcf
 
