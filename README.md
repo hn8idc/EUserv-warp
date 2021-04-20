@@ -19,12 +19,12 @@ echo -e "search blue.kundencontroller.de\noptions rotate\nnameserver 2a02:180:6:
 
 ##### 脚本1：Warp仅接管IPV4网络
 ```
-wget -6 https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp4.sh && chmod +x warp4.sh && ./warp4.sh
+wget -N -6 https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp4.sh && chmod +x warp4.sh && ./warp4.sh
 ```
 
 ##### 脚本2：双栈Warp接管IPV4与IPV6网络
 ```
-wget -6 https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp64.sh && chmod +x warp64.sh && ./warp64.sh
+wget -N -6 https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp64.sh && chmod +x warp64.sh && ./warp64.sh
 ```
 
 --------------------------------------------------------------------------------------------------------------
