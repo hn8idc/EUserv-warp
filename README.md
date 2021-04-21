@@ -1,6 +1,15 @@
 
 #### EUserv IPV6添加WARP双栈IPV6+IPV4，针对OpenVZ、LXC架构的IPV6 only VPS，已设置SSH下IPV4优先!
 
+#### 给ipv6 only VPS添加WARP的好处：
+1：增加IPV4或者IPV6网络，变成双栈VPS，白嫖一个网络通道！
+2：支持直连电报Telegram，支持软路由Openwrt各种翻墙插件！
+3：WARP双栈IPV6+IPV4都支持奈非Netflix等流媒体，无视原IP限制！
+4：支持原本需要IPV4支持的Docker等应用！
+5：加速CloudFlare CDN节点访问速度！
+6：替代HE tunnelbroker隧道方案，网络效率更高！
+7：替代NAT64/DNS64方案，网络效率更高！
+
 #### 1、原先详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
 
 #### 2、最新德鸡EUserv抛弃DNS64、自定义域名、IP分流教程（推荐）：https://youtu.be/fY9HDLJ7mnM
