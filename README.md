@@ -21,11 +21,11 @@
 
 9：替代NAT64/DNS64方案，网络效率更高！
 
-#### 1、原先详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
+#### 原先详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
 
-#### 2、最新德鸡EUserv抛弃DNS64、自定义域名、IP分流教程（推荐）：https://youtu.be/fY9HDLJ7mnM
+#### 最新德鸡EUserv抛弃DNS64、自定义域名、IP分流教程（推荐）：https://youtu.be/fY9HDLJ7mnM
 
-#### 3、联合Oracle甲骨文https://github.com/YG-tsj/Oracle-warp #双栈Warp接管IPV4与IPV6网络：稍后更新
+#### 联合Oracle甲骨文https://github.com/YG-tsj/Oracle-warp #双栈Warp接管IPV4与IPV6网络：稍后更新
 -------------------------------------------------------------------------------------------------------
 
 ##### 一：恢复EUserv官方DNS64（重装系统者，可直接跳到第二步脚本安装）
