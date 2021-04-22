@@ -3,19 +3,23 @@
 
 #### 给ipv6 only VPS添加WARP的好处：
 
-1：增加IPV4或者IPV6网络，变成双栈VPS，白嫖一个网络通道！
+1：使只有IPV6的VPS获取访问IPV4的能力，套上WARP的ip,变成双栈VPS！
 
-2：支持直连电报Telegram，支持软路由Openwrt各种翻墙插件！
+2：基本能隐藏VPS的真实IP！
 
-3：WARP双栈IPV6+IPV4都支持奈非Netflix等流媒体，无视原IP限制！
+3：支持直连电报Telegram，支持软路由Openwrt各种翻墙插件！
 
-4：支持原本需要IPV4支持的Docker等应用！
+4：WARP双栈IPV6+IPV4都支持奈非Netflix等流媒体，无视原IP限制！
 
-5：加速CloudFlare CDN节点访问速度！
+5：支持原本需要IPV4支持的Docker等应用！
 
-6：替代HE tunnelbroker隧道方案，网络效率更高！
+6：加速VPS到CloudFlare CDN节点访问速度！
 
-7：替代NAT64/DNS64方案，网络效率更高！
+7：避开原VPS的IP需要谷歌验证码问题！
+
+8：替代HE tunnelbroker隧道方案，网络效率更高！
+
+9：替代NAT64/DNS64方案，网络效率更高！
 
 #### 1、原先详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
 
