@@ -9,7 +9,7 @@
 
 3：支持直连电报Telegram，支持软路由Openwrt各种翻墙插件！
 
-4：WARP双栈IPV6+IPV4都支持奈非Netflix等流媒体，无视原IP限制！
+4：WARP双栈IPV6+IPV4都支持奈非Netflix流媒体，无视原IP限制！
 
 5：支持原本需要IPV4支持的Docker等应用！
 
