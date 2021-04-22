@@ -54,7 +54,7 @@ wget -N -6 https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp64.sh && chmod +x 
 wg
 ```
 
-##### 提示：配置文件wgcf.conf和注册文件wgcf-account.toml都已备份在/etc/wireguard下！
+##### 提示：配置文件wgcf.conf和注册文件wgcf-account.toml都已备份在/etc/wireguard目录下！
 
 ------------------------------------------------------------------------------------------------------------- 
 ##### IPV6 VPS专用分流配置文件(以下默认全局IPV4优先，IP、域名自定义，详情见视频教程)
