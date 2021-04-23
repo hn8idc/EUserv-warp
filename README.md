@@ -1,5 +1,5 @@
 
-### 给EUserv IPV6添加WARP单IPV4或者双栈IPV6+IPV4，针对OpenVZ、LXC架构的IPV6 only VPS！（时时更新）
+#### 给EUserv IPV6添加WARP单IPV4或者双栈IPV6+IPV4，针对OpenVZ、LXC架构的IPV6 only VPS！
 
 ### IPV6 only VPS添加WARP的好处：
 
@@ -33,11 +33,9 @@
 echo -e "search blue.kundencontroller.de\noptions rotate\nnameserver 2a02:180:6:5::1c\nnameserver 2a02:180:6:5::4\nnameserver 2a02:180:6:5::1e\nnameserver 2a02:180:6:5::1d" > /etc/resolv.conf
 ```
 
-### 二、重装系统能解决99%的问题！无须添加DNS64！
+#### 二、重装系统能解决99%的问题！无须添加DNS64！
 
-#### 仅支持Debian 10/Ubuntu 20.04系统
-
-#### 根据自己需求选择以下脚本1或者脚本2（有无成功可查看脚本末尾提示）
+#### 仅支持Debian 10/Ubuntu 20.04系统，根据自己需求选择以下脚本1或者脚本2（有无成功可查看脚本末尾提示）
 
 ### 脚本1：IPV4是WARP分配的IP，IPV6是VPS本地IP
 ```
