@@ -1,7 +1,7 @@
 
-#### 给EUserv IPV6添加WARP单IPV4或者双栈IPV6+IPV4，针对OpenVZ、LXC架构的IPV6 only VPS！（时时更新）
+### 给EUserv IPV6添加WARP单IPV4或者双栈IPV6+IPV4，针对OpenVZ、LXC架构的IPV6 only VPS！（时时更新）
 
-#### IPV6 only VPS添加WARP的好处：
+### IPV6 only VPS添加WARP的好处：
 
 1：使只有IPV6的VPS获取访问IPV4的能力，套上WARP的ip,变成双栈VPS！
 
@@ -21,42 +21,42 @@
 
 9：替代NAT64/DNS64方案，网络效率更高！
 
-#### 原先详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
+### 原先详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
 
-#### 最新德鸡EUserv抛弃DNS64、自定义域名、IP分流教程（推荐）：https://youtu.be/fY9HDLJ7mnM
+### 最新德鸡EUserv抛弃DNS64、自定义域名、IP分流教程（推荐）：https://youtu.be/fY9HDLJ7mnM
 
-#### 联合Oracle甲骨文https://github.com/YG-tsj/Oracle-warp #双栈Warp接管IPV4与IPV6网络：稍后更新
+### 联合Oracle甲骨文https://github.com/YG-tsj/Oracle-warp #双栈Warp接管IPV4与IPV6网络：稍后更新
 -------------------------------------------------------------------------------------------------------
 
-##### 一：恢复EUserv官方DNS64（重装系统者，可直接跳到第二步脚本安装）
+#### 一：恢复EUserv官方DNS64（重装系统者，可直接跳到第二步脚本安装）
 ```
 echo -e "search blue.kundencontroller.de\noptions rotate\nnameserver 2a02:180:6:5::1c\nnameserver 2a02:180:6:5::4\nnameserver 2a02:180:6:5::1e\nnameserver 2a02:180:6:5::1d" > /etc/resolv.conf
 ```
 
-#### 二、重装系统能解决99%的问题！无须添加DNS64！
+### 二、重装系统能解决99%的问题！无须添加DNS64！
 
-##### 仅支持Debian 10/Ubuntu 20.04系统
+#### 仅支持Debian 10/Ubuntu 20.04系统
 
-##### 根据自己需求选择以下脚本1或者脚本2（有无成功可查看脚本末尾提示）
+#### 根据自己需求选择以下脚本1或者脚本2（有无成功可查看脚本末尾提示）
 
-#### 脚本1：IPV4是WARP分配的IP，IPV6是VPS本地IP
+### 脚本1：IPV4是WARP分配的IP，IPV6是VPS本地IP
 ```
 wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp4.sh|bash
 ```
-#### 脚本2：IPV4与IPV6都是WARP分配的IP
+### 脚本2：IPV4与IPV6都是WARP分配的IP
 ```
 wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp64.sh|bash
 ```
 
-##### 注意：域名解析所填写的IP必须是VPS本地IP，与WARP分配的IP没关系！
+#### 注意：域名解析所填写的IP必须是VPS本地IP，与WARP分配的IP没关系！
 
-##### 提示：配置文件wgcf.conf和注册文件wgcf-account.toml都已备份在/etc/wireguard目录下！
+#### 提示：配置文件wgcf.conf和注册文件wgcf-account.toml都已备份在/etc/wireguard目录下！
 --------------------------------------------------------------------------------------------------------------
 
-##### 查看WARP当前统计状态```wg```
+#### 查看WARP当前统计状态```wg```
 
 ------------------------------------------------------------------------------------------------------------- 
-##### IPV6 VPS专用分流配置文件(以下默认全局IPV4优先，IP、域名自定义，详情见视频教程)
+#### IPV6 VPS专用分流配置文件(以下默认全局IPV4优先，IP、域名自定义，详情见视频教程)
 ```
 { 
 "outbounds": [
