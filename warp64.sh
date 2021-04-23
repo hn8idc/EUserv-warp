@@ -1,4 +1,4 @@
-echo -e "\033[1;36m 请 注 意！脚 本 仅 支 持 Ubuntu 与 Debain 系 统！\n 主要针对OpenVZ、LXC架构的IPV6 only VPS！！！双栈Warp接管IPV4与IPV6网络！！！ \033[0m"
+echo -e "\033[1;36m 请 注 意！脚 本 仅 支 持 Ubuntu20 与 Debain10 系 统！\n 主要针对OpenVZ、LXC架构的IPV6 only VPS！！！双栈Warp接管IPV4与IPV6网络！！！ \033[0m"
 apt update && apt install curl sudo lsb-release iptables -y
 echo "deb http://deb.debian.org/debian $(lsb_release -sc)-backports main" | sudo tee /etc/apt/sources.list.d/backports.list
 apt update
