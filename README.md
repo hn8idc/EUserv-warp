@@ -7,7 +7,7 @@
 
 2：基本能隐藏VPS的真实IP！
 
-3：支持直连电报Telegram，支持软路由Openwrt各种翻墙插件！
+3：支持代理协议直连电报Telegram，支持代理协议连通软路由Openwrt各种翻墙插件！
 
 4：WARP双栈IPV6+IPV4都支持奈非Netflix流媒体，无视原IP限制！
 
