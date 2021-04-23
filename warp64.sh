@@ -11,8 +11,8 @@ chmod +x /usr/local/bin/wgcf
 chmod +x /usr/bin/wireguard-go
 echo | wgcf register
 wgcf generate
-sed -i '5 s/^/PostUp = ip -6 rule add from $(wget -qO- ipv6.ip.sb) table main\n/' wgcf-profile.conf
-sed -i '6 s/^/PostDown = ip -6 rule delete from $(wget -qO- ipv6.ip.sb) table main\n/' wgcf-profile.conf
+sed -i "5 s/^/PostUp = ip -6 rule add from $(wget -qO- ipv6.ip.sb) table main\n/" wgcf-profile.conf
+sed -i "6 s/^/PostDown = ip -6 rule delete from $(wget -qO- ipv6.ip.sb) table main\n/" wgcf-profile.conf
 sed -i 's/engage.cloudflareclient.com/2606:4700:d0::a29f:c001/g' wgcf-profile.conf
 cp wgcf-account.toml /etc/wireguard/wgcf-account.toml
 cp wgcf-profile.conf /etc/wireguard/wgcf.conf
