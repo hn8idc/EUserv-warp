@@ -11,11 +11,8 @@ chmod +x /usr/local/bin/wgcf
 chmod +x /usr/bin/wireguard-go
 echo | wgcf register
 wgcf generate
-sed -i '5 s/^/PostUp = ip -6 rule add from eu6 table main\n/' wgcf-profile.conf
-sed -i '6 s/^/PostDown = ip -6 rule delete from eu6 table main\n/' wgcf-profile.conf
-echo -e "\033[1;31m 请复制VPS的IPV6地址 \033[0m"
-read -p "粘贴（VPS的IPV6地址）:" eu6
-sed -i "s#eu6#$eu6#g" wgcf-profile.conf
+sed -i '5 s/^/PostUp = ip -6 rule add from $(wget -qO- ipv6.ip.sb) table main\n/' wgcf-profile.conf
+sed -i '6 s/^/PostDown = ip -6 rule delete from $(wget -qO- ipv6.ip.sb) table main\n/' wgcf-profile.conf
 sed -i 's/engage.cloudflareclient.com/2606:4700:d0::a29f:c001/g' wgcf-profile.conf
 cp wgcf-account.toml /etc/wireguard/wgcf-account.toml
 cp wgcf-profile.conf /etc/wireguard/wgcf.conf
