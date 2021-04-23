@@ -1,7 +1,7 @@
 
 #### 给EUserv IPV6添加WARP单IPV4或者双栈IPV6+IPV4，针对OpenVZ、LXC架构的IPV6 only VPS！（时时更新）
 
-#### ipv6 only VPS添加WARP的好处：
+#### IPV6 only VPS添加WARP的好处：
 
 1：使只有IPV6的VPS获取访问IPV4的能力，套上WARP的ip,变成双栈VPS！
 
@@ -46,8 +46,8 @@ wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp4.sh|bash
 #### 脚本2：IPV4与IPV6都是WARP分配的IP
 ```
 wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp64.sh|bash
-
 ```
+
 ##### 注意：域名解析所填写的IP必须是VPS本地IP，与WARP分配的IP没关系！
 
 ##### 提示：配置文件wgcf.conf和注册文件wgcf-account.toml都已备份在/etc/wireguard目录下！
