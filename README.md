@@ -21,9 +21,9 @@
 
 9：替代NAT64/DNS64方案，网络效率更高！
 
-#### 原先详细视频教程及探讨：https://youtu.be/78dZgYFS-Qo
+#### WARP原理与及搭建探讨：https://youtu.be/78dZgYFS-Qo
 
-#### 最新德鸡EUserv抛弃DNS64、自定义域名、IP分流教程（推荐）：https://youtu.be/fY9HDLJ7mnM
+#### 抛弃DNS64、自定义域名、IP分流教程（推荐）：https://youtu.be/fY9HDLJ7mnM
 
 #### 联合Oracle甲骨文https://github.com/YG-tsj/Oracle-warp #双栈Warp接管IPV4与IPV6网络：稍后更新
 -------------------------------------------------------------------------------------------------------
