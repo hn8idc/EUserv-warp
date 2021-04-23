@@ -1,7 +1,7 @@
 
-#### EUserv IPV6添加WARP双栈IPV6+IPV4，针对OpenVZ、LXC架构的IPV6 only VPS，已设置SSH下IPV4优先!
+#### 给EUserv IPV6添加WARP单IPV4或者双栈IPV6+IPV4，针对OpenVZ、LXC架构的IPV6 only VPS，已设置SSH下IPV4优先!
 
-#### 给ipv6 only VPS添加WARP的好处：
+#### ipv6 only VPS添加WARP的好处：
 
 1：使只有IPV6的VPS获取访问IPV4的能力，套上WARP的ip,变成双栈VPS！
 
@@ -33,18 +33,20 @@
 echo -e "search blue.kundencontroller.de\noptions rotate\nnameserver 2a02:180:6:5::1c\nnameserver 2a02:180:6:5::4\nnameserver 2a02:180:6:5::1e\nnameserver 2a02:180:6:5::1d" > /etc/resolv.conf
 ```
 
-##### 二、重装系统能解决99%的问题！无须添加DNS64！warp单双栈ipv4+ipv6脚本
+##### 二、重装系统能解决99%的问题！无须添加DNS64！WARP单-双栈ipv4+ipv6脚本
 
-##### 推荐Debian 10/Ubuntu 20.04系统，根据自己需求选择脚本1或者脚本2（有无成功可查看脚本末尾提示）
+##### 仅支持Debian 10/Ubuntu 20.04系统
 
-##### 脚本1：Warp仅接管IPV4网络
+##### 根据自己需求选择脚本1或者脚本2（有无成功可查看脚本末尾提示）
+
+##### 脚本1：Warp仅接管IPV4网络，本地IPV6网络不变
 ```
-wget -N -6 https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp4.sh && chmod +x warp4.sh && ./warp4.sh
+wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp4.sh|bash
 ```
 
-##### 脚本2：双栈Warp接管IPV4与IPV6网络
+##### 脚本2：Warp接管IPV4与IPV6网络
 ```
-wget -N -6 https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp64.sh && chmod +x warp64.sh && ./warp64.sh
+wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp64.sh|bash
 ```
 
 --------------------------------------------------------------------------------------------------------------
