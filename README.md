@@ -46,8 +46,9 @@ wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp4.sh|bash
 ##### 脚本2：IPV4与IPV6都是WARP分配的IP
 ```
 wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp64.sh|bash
-```
 
+```
+##### 注意：域名解析所填写的IP必须是VPS本地IP，与WARP分配的IP没关系。。
 --------------------------------------------------------------------------------------------------------------
 
 ##### 查看WARP当前统计状态
