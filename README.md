@@ -25,7 +25,7 @@
 
 #### 抛弃DNS64、自定义域名、IP分流教程（推荐）：https://youtu.be/fY9HDLJ7mnM
 
-#### 联合Oracle甲骨文https://github.com/YG-tsj/Oracle-warp #双栈Warp接管IPV4与IPV6网络：稍后更新
+#### 联合Oracle甲骨文https://github.com/YG-tsj/Oracle-warp #双栈Warp接管IPV4与IPV6网络：https://youtu.be/o7e_ikV-m-g
 -------------------------------------------------------------------------------------------------------
 
 ### 一：恢复EUserv官方DNS64（重装系统者，可直接跳到第二步脚本安装）
