@@ -63,15 +63,15 @@ wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp64.sh|bash
 { 
 "outbounds": [
     {
-      "tag":"IP6-out",
+      "tag":"IP4-out",
       "protocol": "freedom",
       "settings": {}
     },
     {
-      "tag":"IP4-out",
+      "tag":"IP6-out",
       "protocol": "freedom",
       "settings": {
-        "domainStrategy": "UseIPv4" 
+        "domainStrategy": "UseIPv6" 
       }
     }
   ],
