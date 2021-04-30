@@ -50,6 +50,8 @@ wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp64.sh|bash
 
 #### 注意：域名解析所填写的IP必须是VPS本地IP，与WARP分配的IP没关系！
 
+#### 推荐使用Xray脚本项目（mack-a）：https://github.com/mack-a/v2ray-agent
+
 #### 提示：配置文件wgcf.conf和注册文件wgcf-account.toml都已备份在/etc/wireguard目录下！
 --------------------------------------------------------------------------------------------------------------
 
