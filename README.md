@@ -17,9 +17,7 @@
 
 7：避开原VPS的IP需要谷歌验证码问题！
 
-8：替代HE tunnelbroker IPV4隧道代理方案，网络效率更高！
-
-9：替代NAT64/DNS64方案，网络效率更高！
+8：替代NAT64/DNS64方案，网络效率更高！
 
 #### WARP原理与及搭建探讨：https://youtu.be/78dZgYFS-Qo
 
