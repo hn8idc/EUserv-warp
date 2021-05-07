@@ -55,6 +55,10 @@ wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp64.sh|bash
 
 #### 查看WARP当前统计状态：```wg```
 
+#### 查看当前IPV4 IP：```curl -4 ip.p3terx.com```
+
+#### 查看当前IPV6 IP：```curl -6 ip.p3terx.com```
+
 ------------------------------------------------------------------------------------------------------------- 
 #### IPV6 VPS专用分流配置文件(以下默认全局IPV4优先，IP、域名自定义，详情见视频教程)
 ```
