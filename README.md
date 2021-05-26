@@ -37,11 +37,11 @@ echo -e "search blue.kundencontroller.de\noptions rotate\nnameserver 2a02:180:6:
 
 #### 脚本1：IPV4是WARP分配的IP，IPV6是VPS本地IP
 ```
-wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp4.sh|bash
+wget -qO- https://raw.githubusercontent.com/veip007/EUserv-warp/main/warp4.sh|bash
 ```
 #### 脚本2：IPV4与IPV6都是WARP分配的IP
 ```
-wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp64.sh|bash
+wget -qO- https://raw.githubusercontent.com/veip007/EUserv-warp/main/warp64.sh|bash
 ```
 ----------------------------------------------------------------------------------------------------
 #### Netflix检测项目：https://github.com/YG-tsj/Netflix-Check
